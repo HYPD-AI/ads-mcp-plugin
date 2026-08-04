@@ -4,7 +4,11 @@ Analyze your paid marketing in plain language, inside Claude. HYPD connects your
 
 **Read-only.** HYPD reports on your accounts and never changes your campaigns, budgets or ads.
 
+Works in **Claude Code** (terminal, desktop, IDE) and **Claude Cowork**. Step-by-step guide with screenshots: [docs.hypd.ai/guides/claude-code-plugin](https://docs.hypd.ai/guides/claude-code-plugin).
+
 ## Install
+
+### Claude Code (terminal)
 
 ```
 /plugin marketplace add HYPD-AI/hypd-claude-plugin
@@ -12,29 +16,41 @@ Analyze your paid marketing in plain language, inside Claude. HYPD connects your
 /reload-plugins
 ```
 
-Then run `/mcp`, select **hypd**, and authorize in your browser.
+Then authorize: `/mcp` → **hypd** → **Authenticate** (or run `claude mcp login 'plugin:hypd-ai-ads:hypd'` from a normal terminal). A terminal install also covers the desktop app's Code tab.
 
-Works in **Claude Code** and **Claude Cowork**.
+### Desktop app & Claude Cowork
+
+Settings → **Customize** → **Plugins** → **Add** → **Add marketplace** → **Add from a repository** → enter `HYPD-AI/hypd-claude-plugin` → **Sync**. Then install **HYPD AI - Paid Ads & Analytics** from the **Personal** tab and connect the **HYPD AI Ads** connector on the plugin's page.
+
+A terminal install does not carry over to Cowork — use this path there.
+
+### Zip upload (no marketplace)
+
+Download [`hypd-ai-ads.zip`](https://github.com/HYPD-AI/hypd-claude-plugin/releases/latest/download/hypd-ai-ads.zip), then **Add** → **Upload plugin** in the desktop app. Or load it for a single session:
+
+```
+claude --plugin-dir ./hypd-ai-ads.zip
+```
+
+Uploaded copies don't update automatically — prefer the marketplace installs above.
 
 ## What you can do
 
 - **Google Ads** — campaign performance, spend, ROAS and CPA, account overviews, custom queries across any date range
 - **Meta (Facebook) Ads** — campaign, ad set and ad performance, creative details, audience insights, catalogs, lead forms
-- **Meta Ad Library** — search competitors' live and past ads across Facebook and Instagram, and view their creatives
+- **Meta Ad Library** — search competitors' live and past ads across Facebook and Instagram
 - **Google Analytics (GA4)** — ecommerce and campaign performance, landing pages, funnels, conversion paths, attribution comparison
-- **Merchant Center** — feed diagnostics, disapproved products, issue summaries, product performance, price competitiveness, competitive visibility
+- **Merchant Center** — feed diagnostics, disapproved products, product performance, price competitiveness, competitive visibility
 - **Research** — keyword ideas and search volume, competitor ads via Google Ads Transparency, live SERP and Shopping data
 - **Landing pages** — instant quality audits, performance scores, resource breakdowns, screenshots
 - **Prompt templates, marketing skills and saved business context**, so every answer reflects your accounts, brand and goals
 
-Ask things like:
+Try:
 
 ```
-Show campaign clicks, cost, conversions and ROAS for my Google Ads account over the last 7 days.
 Audit my account and tell me where budget is being wasted.
 How are my Meta ads performing, and which creatives are fatiguing?
 Compare attribution between Google Analytics and Google Ads.
-Which of my Merchant Center products are disapproved?
 Show the ads a competitor is running on Facebook and Instagram.
 ```
 
@@ -45,17 +61,12 @@ A HYPD account. Sign up at [app.hypd.ai](https://app.hypd.ai) and connect at lea
 ## Data and privacy
 
 - **No hooks.** This plugin registers no lifecycle hooks and observes nothing outside explicit tool calls.
-- **No telemetry.** The plugin ships no analytics or tracking code. The only network destination is HYPD's own API (`mcp.hypd.ai`), reached through the MCP connection you authorize.
-- **Read-only.** No tool creates, edits, pauses or deletes campaigns, budgets or ads in any connected platform.
-- **Your data stays yours.** HYPD reads the advertising accounts you connect, to answer the questions you ask.
+- **No telemetry.** The only network destination is HYPD's own API (`mcp.hypd.ai`), reached through the MCP connection you authorize.
+- **Read-only.** No tool creates, edits, pauses or deletes anything in any connected platform.
 
 ## Links
 
-- [Website](https://www.hypd.ai)
-- [Documentation](https://docs.hypd.ai)
-- [Privacy Policy](https://www.hypd.ai/privacy)
-- [Terms of Service](https://www.hypd.ai/terms)
-- [Support](mailto:contact@hypd.ai)
+[Website](https://www.hypd.ai) · [Documentation](https://docs.hypd.ai) · [Privacy Policy](https://www.hypd.ai/privacy) · [Terms](https://www.hypd.ai/terms) · [Support](mailto:contact@hypd.ai)
 
 ## License
 
