@@ -1,0 +1,31 @@
+{
+  "name": "hypd-ai",
+  "owner": {
+    "name": "HYPD",
+    "email": "contact@hypd.ai",
+    "url": "https://www.hypd.ai"
+  },
+  "metadata": {
+    "description": "HYPD plugins for Claude: paid advertising and analytics reporting."
+  },
+  "plugins": [
+    {
+      "name": "hypd-ai-ads",
+      "source": "./",
+      "displayName": "HYPD AI - Paid Ads & Analytics",
+      "description": "Google Ads, Meta (Facebook) Ads, Google Analytics (GA4) and Merchant Center analysis in plain language. Campaign performance, ROAS breakdowns, wasted-spend checks, creative and audience insights, funnels and attribution, Shopping feed diagnostics, keyword and competitor research, and landing-page checks. Read-only: HYPD reports on your accounts and never changes your campaigns.",
+      "category": "marketing",
+      "keywords": [
+        "google-ads",
+        "meta-ads",
+        "google-analytics",
+        "merchant-center",
+        "ppc",
+        "paid-media"
+      ],
+      "homepage": "https://docs.hypd.ai/guides/claude-code-plugin",
+      "repository": "https://github.com/HYPD-AI/hypd-claude-plugin",
+      "license": "MIT"
+    }
+  ]
+}

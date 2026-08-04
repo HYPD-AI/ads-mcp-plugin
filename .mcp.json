@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hypd": {
+      "type": "http",
+      "url": "https://mcp.hypd.ai/mcp"
+    }
+  }
+}
