@@ -8,4 +8,4 @@ Run keyword research for $ARGUMENTS.
 3. Call `prompt_templates_run` with key `keyword-research-for-a-new-search-campaign` (new) or `keyword-expansion-for-an-existing-search-campaigns` (existing), then follow its [input] directives.
 4. Execute with HYPD's research tools and present keywords with volumes grouped by intent.
 
-If the HYPD MCP server is unavailable or not authenticated, do not fail — guide the user to connect: in the terminal, run `/mcp`, select **hypd**, choose **Authenticate**; in the desktop app or Cowork, open Settings → **Customize** → **Plugins** → **HYPD AI - Paid Ads & Analytics** and connect the **HYPD AI Ads** connector.
+If HYPD is unavailable or not authenticated, do not fail — follow the **hypd-getting-started** skill to guide the user through connecting.
