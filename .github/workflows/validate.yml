@@ -1,0 +1,28 @@
+name: validate
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: JSON syntax
+        run: |
+          for f in .claude-plugin/plugin.json .claude-plugin/marketplace.json .mcp.json; do
+            jq empty "$f" && echo "OK $f"
+          done
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code@latest
+      - name: Plugin validation (strict)
+        run: claude plugin validate . --strict
+      - name: Version bumped vs main (PRs only)
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch origin main --depth 1
+          BASE=$(git show origin/main:.claude-plugin/plugin.json | jq -r .version)
+          HEAD=$(jq -r .version .claude-plugin/plugin.json)
+          echo "main=$BASE head=$HEAD"
+          [ "$BASE" != "$HEAD" ] || { echo "::error::Bump the version in .claude-plugin/plugin.json"; exit 1; }
