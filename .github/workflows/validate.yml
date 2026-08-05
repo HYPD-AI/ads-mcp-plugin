@@ -18,6 +18,12 @@ jobs:
         run: npm install -g @anthropic-ai/claude-code@latest
       - name: Plugin validation (strict)
         run: claude plugin validate . --strict
+      - name: plugin.json and marketplace.json versions match
+        run: |
+          PJ=$(jq -r .version .claude-plugin/plugin.json)
+          MP=$(jq -r '.plugins[0].version // empty' .claude-plugin/marketplace.json)
+          echo "plugin.json=$PJ marketplace.json=$MP"
+          [ -n "$MP" ] && [ "$PJ" = "$MP" ] || { echo "::error::Versions must be set and equal in both files"; exit 1; }
       - name: Version bumped vs main (PRs only)
         if: github.event_name == 'pull_request'
         run: |
