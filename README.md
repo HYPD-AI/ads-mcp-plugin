@@ -68,7 +68,11 @@ A HYPD account. Sign up at [app.hypd.ai](https://app.hypd.ai) and connect at lea
 
 ## Links
 
-[Website](https://www.hypd.ai) · [Dashboard](https://app.hypd.ai) · [Google Ads MCP](https://www.hypd.ai/google-ads-mcp) · [Meta Ads MCP](https://www.hypd.ai/meta-ads-mcp) · [Documentation](https://docs.hypd.ai) · [Privacy Policy](https://www.hypd.ai/privacy) · [Terms](https://www.hypd.ai/terms) · [Support](mailto:contact@hypd.ai) · [LinkedIn](https://www.linkedin.com/company/wearehypd) · [X](https://x.com/hypdai) · [Facebook](https://www.facebook.com/profile.php?id=61591141040053) · [YouTube](https://www.youtube.com/channel/UCGIuRID64FBM2fSJ0DwOyCg)
+**Product** — [Dashboard](https://app.hypd.ai) · [Google Ads MCP](https://www.hypd.ai/google-ads-mcp) · [Meta Ads MCP](https://www.hypd.ai/meta-ads-mcp) · [Documentation](https://docs.hypd.ai) · [Support](mailto:contact@hypd.ai)
+
+**Social** — [LinkedIn](https://www.linkedin.com/company/wearehypd) · [X](https://x.com/hypdai) · [Facebook](https://www.facebook.com/profile.php?id=61591141040053) · [YouTube](https://www.youtube.com/channel/UCGIuRID64FBM2fSJ0DwOyCg)
+
+**Company** — [Website](https://www.hypd.ai) · [Privacy Policy](https://www.hypd.ai/privacy) · [Terms](https://www.hypd.ai/terms)
 
 ## License
 
