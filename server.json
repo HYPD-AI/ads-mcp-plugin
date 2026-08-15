@@ -1,0 +1,50 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.HYPD-AI/ads",
+  "title": "HYPD AI - Paid Ads & Analytics",
+  "description": "Google Ads, Meta (Facebook) Ads, GA4 and Merchant Center analysis in plain language. Read-only.",
+  "version": "1.2.3",
+  "websiteUrl": "https://www.hypd.ai",
+  "repository": {
+    "url": "https://github.com/HYPD-AI/ads-mcp-plugin",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hypd.ai/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "authentication": {
+        "type": "oauth2",
+        "flow": "authorization_code",
+        "pkceRequired": true,
+        "protectedResourceMetadataUrl": "https://mcp.hypd.ai/.well-known/oauth-protected-resource"
+      },
+      "categories": [
+        "marketing",
+        "advertising",
+        "analytics",
+        "ecommerce"
+      ],
+      "tags": [
+        "google-ads",
+        "meta-ads",
+        "facebook-ads",
+        "google-analytics",
+        "ga4",
+        "merchant-center",
+        "keyword-research",
+        "ppc",
+        "roas"
+      ],
+      "license": "MIT",
+      "privacyPolicyUrl": "https://www.hypd.ai/privacy",
+      "termsOfServiceUrl": "https://www.hypd.ai/terms",
+      "supportContact": "contact@hypd.ai",
+      "documentationUrl": "https://docs.hypd.ai/guides/claude-code-plugin"
+    }
+  }
+}

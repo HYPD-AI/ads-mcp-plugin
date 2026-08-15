@@ -11,7 +11,7 @@ Works in **Claude Code** (terminal, desktop, IDE) and **Claude Cowork**. Step-by
 ### Claude Code (terminal)
 
 ```
-/plugin marketplace add HYPD-AI/hypd-claude-plugin
+/plugin marketplace add HYPD-AI/ads-mcp-plugin
 /plugin install hypd-ai-ads@hypd-ai
 /reload-plugins
 ```
@@ -20,13 +20,13 @@ Then authorize: `/mcp` → **hypd** → **Authenticate** (or run `claude mcp log
 
 ### Desktop app & Claude Cowork
 
-Settings → **Customize** → **Plugins** → **Add** → **Add marketplace** → **Add from a repository** → enter `HYPD-AI/hypd-claude-plugin` → **Sync**. Then install **HYPD AI - Paid Ads & Analytics** from the **Personal** tab and connect the **HYPD AI Ads** connector on the plugin's page.
+Settings → **Customize** → **Plugins** → **Add** → **Add marketplace** → **Add from a repository** → enter `HYPD-AI/ads-mcp-plugin` → **Sync**. Then install **HYPD AI - Paid Ads & Analytics** from the **Personal** tab and connect the **HYPD AI Ads** connector on the plugin's page.
 
 A terminal install does not carry over to Cowork — use this path there.
 
 ### Zip upload (no marketplace)
 
-Download [`hypd-ai-ads.zip`](https://github.com/HYPD-AI/hypd-claude-plugin/releases/latest/download/hypd-ai-ads.zip), then **Add** → **Upload plugin** in the desktop app. Or load it for a single session:
+Download [`hypd-ai-ads.zip`](https://github.com/HYPD-AI/ads-mcp-plugin/releases/latest/download/hypd-ai-ads.zip), then **Add** → **Upload plugin** in the desktop app. Or load it for a single session:
 
 ```
 claude --plugin-dir ./hypd-ai-ads.zip
@@ -66,7 +66,7 @@ A HYPD account. Sign up at [app.hypd.ai](https://app.hypd.ai) and connect at lea
 
 ## Links
 
-[Website](https://www.hypd.ai) · [Documentation](https://docs.hypd.ai) · [Privacy Policy](https://www.hypd.ai/privacy) · [Terms](https://www.hypd.ai/terms) · [Support](mailto:contact@hypd.ai)
+[Website](https://www.hypd.ai) · [Google Ads MCP](https://www.hypd.ai/google-ads-mcp) · [Meta Ads MCP](https://www.hypd.ai/meta-ads-mcp) · [Documentation](https://docs.hypd.ai) · [Privacy Policy](https://www.hypd.ai/privacy) · [Terms](https://www.hypd.ai/terms) · [Support](mailto:contact@hypd.ai)
 
 ## License
 
