@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "hypd-ai-ads",
-      "version": "1.2.4",
+      "version": "1.2.5",
       "source": "./",
       "displayName": "HYPD AI - Paid Ads & Analytics",
       "description": "Google Ads, Meta (Facebook) Ads, Google Analytics (GA4) and Merchant Center analysis in plain language. Campaign performance, ROAS breakdowns, wasted-spend checks, creative and audience insights, funnels and attribution, Shopping feed diagnostics, keyword and competitor research, and landing-page checks. Read-only: HYPD reports on your accounts and never changes your campaigns.",
