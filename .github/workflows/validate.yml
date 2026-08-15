@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: JSON syntax
         run: |
-          for f in .claude-plugin/plugin.json .claude-plugin/marketplace.json .mcp.json; do
+          for f in .claude-plugin/plugin.json .claude-plugin/marketplace.json .mcp.json server.json; do
             jq empty "$f" && echo "OK $f"
           done
       - name: Install Claude Code
@@ -22,8 +22,9 @@ jobs:
         run: |
           PJ=$(jq -r .version .claude-plugin/plugin.json)
           MP=$(jq -r '.plugins[0].version // empty' .claude-plugin/marketplace.json)
-          echo "plugin.json=$PJ marketplace.json=$MP"
-          [ -n "$MP" ] && [ "$PJ" = "$MP" ] || { echo "::error::Versions must be set and equal in both files"; exit 1; }
+          SJ=$(jq -r '.version // empty' server.json)
+          echo "plugin.json=$PJ marketplace.json=$MP server.json=$SJ"
+          [ -n "$MP" ] && [ -n "$SJ" ] && [ "$PJ" = "$MP" ] && [ "$PJ" = "$SJ" ] || { echo "::error::Versions must be set and equal in plugin.json, marketplace.json and server.json"; exit 1; }
       - name: Version bumped vs main (PRs only)
         if: github.event_name == 'pull_request'
         run: |
