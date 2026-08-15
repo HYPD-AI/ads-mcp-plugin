@@ -3,7 +3,7 @@
   "name": "io.github.HYPD-AI/ads",
   "title": "HYPD AI - Paid Ads & Analytics",
   "description": "Google Ads, Meta (Facebook) Ads, GA4 and Merchant Center analysis in plain language. Read-only.",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "websiteUrl": "https://www.hypd.ai",
   "repository": {
     "url": "https://github.com/HYPD-AI/ads-mcp-plugin",
