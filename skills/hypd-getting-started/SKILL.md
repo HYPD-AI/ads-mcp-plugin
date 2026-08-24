@@ -5,7 +5,7 @@ description: Connect HYPD and your ad accounts. Use when HYPD is not connected y
 # Getting started with HYPD
 
 1. **Create a HYPD account** at https://app.hypd.ai (OAuth sign-in, no card needed to start).
-2. **Connect at least one source** on the Sources page (https://app.hypd.ai/sources): Google Ads, Meta, Google Analytics, Merchant Center, Microsoft Ads, or LinkedIn Ads.
+2. **Connect at least one source** on the Sources page (https://app.hypd.ai/sources): Google Ads, Meta, Google Analytics, or Merchant Center.
 3. **Authorize the HYPD connector in your assistant.**
    - Claude Code (terminal): run `/mcp`, select **hypd**, choose **Authenticate**, approve in the browser.
    - Claude desktop app or Cowork: Settings → **Customize** → **Plugins** → open **HYPD AI - Paid Ads & Analytics** → connect the **HYPD AI Ads** connector.

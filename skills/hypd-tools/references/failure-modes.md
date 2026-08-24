@@ -31,11 +31,6 @@ invent data the tool did not return.
   common research-tool failure.
 - Pass `itemTypes` explicitly on SERP requests (e.g. `["organic"]`).
 
-## LinkedIn Ads
-
-- Call LinkedIn tools **one at a time, never in parallel**.
-- `endDate` on the Ad Library is exclusive — for one day, pass the next day.
-
 ## General
 
 - Everything is read-only: no HYPD tool can change anything in a connected

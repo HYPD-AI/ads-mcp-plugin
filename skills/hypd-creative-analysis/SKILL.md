@@ -1,5 +1,5 @@
 ---
-description: Analyze ad creatives — the user's own ads, uploaded drafts, or competitor ads from the public ad libraries (Meta, Google, LinkedIn). Use when the user asks what ads someone is running, wants creatives described, tagged, or reviewed, or wants feedback on a draft.
+description: Analyze ad creatives — the user's own ads, uploaded drafts, or competitor ads from the public ad libraries (Meta, Google). Use when the user asks what ads someone is running, wants creatives described, tagged, or reviewed, or wants feedback on a draft.
 ---
 
 # Creative analysis

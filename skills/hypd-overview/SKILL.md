@@ -6,7 +6,7 @@ description: What the HYPD plugin can do — platforms, analyses and workflows. 
 
 HYPD analyzes the user's real advertising data, read-only: it never changes campaigns, budgets or ads.
 
-**Platforms:** Google Ads · Meta (Facebook) Ads + Ad Library · Google Analytics (GA4) · Merchant Center · Microsoft Ads · LinkedIn Ads — plus keyword research, competitor/SERP/Shopping research, and landing-page checks.
+**Platforms:** Google Ads · Meta (Facebook) Ads + Ad Library · Google Analytics (GA4) · Merchant Center — plus keyword research, competitor/SERP/Shopping research, and landing-page checks.
 
 **Ready-made workflows** (each has its own skill with the exact steps):
 
