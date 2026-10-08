@@ -2,7 +2,7 @@
   "mcpServers": {
     "hypd": {
       "type": "http",
-      "url": "https://mcp.hypd.ai/mcp"
+      "url": "https://mcp.hypd.ai/mcp/claude"
     }
   }
 }
