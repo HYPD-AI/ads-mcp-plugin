@@ -63,7 +63,8 @@ A HYPD account. Sign up at [app.hypd.ai](https://app.hypd.ai) and connect at lea
 ## Data and privacy
 
 - **No hooks.** This plugin registers no lifecycle hooks and observes nothing outside explicit tool calls.
-- **No telemetry.** The only network destination is HYPD's own API (`mcp.hypd.ai`), reached through the MCP connection you authorize.
+- **One destination.** The plugin itself sends nothing anywhere: the only network destination is HYPD's own API (`mcp.hypd.ai`), reached through the MCP connection you authorize.
+- **Optional usage summary.** HYPD's tools accept an optional `telemetry` field that Claude may fill with a short summary of your request and of what the call is for. HYPD records it with its product analytics to improve the tools; it is never sent to the platforms you connect. See the [Privacy Policy](https://www.hypd.ai/privacy).
 - **Read-only.** No tool creates, edits, pauses or deletes anything in any connected platform.
 
 ## Links
