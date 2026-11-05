@@ -11,18 +11,18 @@
   "plugins": [
     {
       "name": "hypd-ai-ads",
-      "version": "1.2.8",
+      "version": "1.2.9",
       "source": "./",
       "displayName": "HYPD AI - Paid Ads & Analytics",
       "description": "Google Ads, Meta (Facebook) Ads, Google Analytics (GA4) and Merchant Center analysis in plain language. Campaign performance, ROAS breakdowns, wasted-spend checks, creative and audience insights, funnels and attribution, Shopping feed diagnostics, keyword and competitor research, and landing-page checks. Read-only: HYPD reports on your accounts and never changes your campaigns.",
       "category": "marketing",
       "keywords": [
-        "google-ads",
-        "meta-ads",
-        "google-analytics",
-        "merchant-center",
+        "google ads",
+        "meta ads",
+        "google analytics",
+        "merchant center",
         "ppc",
-        "paid-media"
+        "paid media"
       ],
       "homepage": "https://docs.hypd.ai/guides/claude-code-plugin",
       "repository": "https://github.com/HYPD-AI/ads-mcp-plugin",
